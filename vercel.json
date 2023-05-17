@@ -1,17 +1,13 @@
 {
-"version": 2,
-"builds": [
-  {
-    "src": "src/index.ts",
-    "use": "@vercel/node"
-  }
-],
-"routes": [
-  {
-    "src": "/(.*)",
-    "dest": "/src/index.ts"
-  }
-],"env": {
-  "PORT": "3000"
-}
+
+    "vercel":2,
+    "public":true,
+    "build":{
+        "src":"/src/index.ts",
+        "use":"@vercel/node"
+    },
+    "routes":[{
+        "src":"/(.*)",
+        "dest":"/src/index.ts"
+    }]
 }
